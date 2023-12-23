@@ -1,0 +1,443 @@
+GET https://pixrouter-23f4b9946658.herokuapp.com/api/v1/data/17 #Consultar um determinado lançamento
+
+POST https://pixrouter-23f4b9946658.herokuapp.com/api/v1/enviapix/  #Envia um lançamento de PIX
+
+Parâmetros da POST:
+
+{
+
+    "idtrans": 16,
+
+    "tstrans": "2023-12-06T21:50:49.459117Z",
+
+    "iptrans": "127.0.0.1",
+
+    "chavepix": "6199751522",
+
+    "banco": "0104",
+
+    "conta": "1008",
+
+    "valor": "3205.55",
+
+    "titular": "José Luiz Tranquilino da Silva",
+
+    "resposta": "",
+
+    "minhaconta": "4687204",
+
+    "meunome": "Meu Principe"
+
+}
+
+GET https://pixrouter-23f4b9946658.herokuapp.com/api/ #Consultar todos os lançamentos da base.
+
+ 
+
+[
+
+    {
+
+        "chavepix": "6199751522",
+
+        "banco": "0341",
+
+        "conta": "2015252",
+
+        "titular": "Primeira Chave da Silva"
+
+    },
+
+    {
+
+        "chavepix": toto@yahoo.com,
+
+        "banco": "0270",
+
+        "conta": "723587",
+
+        "titular": "Totó da Silva Chavier"
+
+    },
+
+    {
+
+        "chavepix": brincando_de_enviar_pix@meubanco.com,
+
+        "banco": "104",
+
+        "conta": "792412880007682800969",
+
+        "titular": "Obonzao da Silva"
+
+    },
+
+    {
+
+        "chavepix": "6199251449",
+
+        "banco": "0341",
+
+        "conta": "20172582",
+
+        "titular": "O Montro da Automação"
+
+    }
+
+]
+
+[
+
+    {
+
+        "idtrans": 1,
+
+        "tstrans": null,
+
+        "iptrans": "127.0.0.1",
+
+        "chavepix": "34768416187",
+
+        "banco": "0260",
+
+        "conta": "4687204",
+
+        "valor": "780.27",
+
+        "titular": "Divino Cecim da Silva",
+
+        "resposta": "",
+
+        "minhaconta": "1008",
+
+        "meunome": "Meu Nome"
+
+    },
+
+    {
+
+        "idtrans": 2,
+
+        "tstrans": "2023-12-04T21:42:41.961670Z",
+
+        "iptrans": "127.0.0.1",
+
+        "chavepix": "61982093849",
+
+        "banco": "0104",
+
+        "conta": "1008",
+
+        "valor": "125.10",
+
+        "titular": "Principe Pitoco",
+
+        "resposta": "",
+
+        "minhaconta": "4687204",
+
+        "meunome": "Meu Principe"
+
+    },
+
+    {
+
+        "idtrans": 3,
+
+        "tstrans": "2023-12-04T21:13:33.918188Z",
+
+        "iptrans": "170.150.145.230",
+
+        "chavepix": "322fc8af-5a94-4638-bfc2-2e354df19d5f",
+
+        "banco": "0341",
+
+        "conta": "10301152",
+
+        "valor": "200.00",
+
+        "titular": "Principe Pitoco",
+
+        "resposta": "",
+
+        "minhaconta": "1008",
+
+        "meunome": "Meu Nome"
+
+    },
+
+    {
+
+        "idtrans": 4,
+
+        "tstrans": "2023-12-05T14:18:52.175062Z",
+
+        "iptrans": "127.0.0.1",
+
+        "chavepix": "61982093849",
+
+        "banco": "0104",
+
+        "conta": "1008",
+
+        "valor": "125.10",
+
+        "titular": "Principe Pitoco",
+
+        "resposta": "",
+
+        "minhaconta": "4687204",
+
+        "meunome": "Meu Principe"
+
+    },
+
+    {
+
+        "idtrans": 5,
+
+        "tstrans": "2023-12-05T14:24:28.361757Z",
+
+        "iptrans": "127.0.0.1",
+
+        "chavepix": "6199251449",
+
+        "banco": "0104",
+
+        "conta": "1008",
+
+        "valor": "1500.10",
+
+        "titular": "Monstro da Automação",
+
+        "resposta": "",
+
+        "minhaconta": "4687204",
+
+        "meunome": "Meu Principe"
+
+    },
+
+    {
+
+        "idtrans": 6,
+
+        "tstrans": "2023-12-05T14:25:42.230757Z",
+
+        "iptrans": "127.0.0.1",
+
+        "chavepix": "000000000",
+
+        "banco": "0104",
+
+        "conta": "1008",
+
+        "valor": "1500.10",
+
+        "titular": "Monstro da Automação",
+
+        "resposta": "",
+
+        "minhaconta": "4687204",
+
+        "meunome": "Meu Principe"
+
+    },
+
+    {
+
+        "idtrans": 7,
+
+        "tstrans": "2023-12-05T14:27:17.302359Z",
+
+        "iptrans": "127.0.0.1",
+
+        "chavepix": "000000000",
+
+        "banco": "0104",
+
+        "conta": "1008",
+
+        "valor": "1500.10",
+
+        "titular": "Monstro da Automação",
+
+        "resposta": "",
+
+        "minhaconta": "4687204",
+
+        "meunome": "Meu Principe"
+
+    },
+
+    {
+
+        "idtrans": 8,
+
+        "tstrans": "2023-12-05T14:28:39.125678Z",
+
+        "iptrans": "127.0.0.1",
+
+        "chavepix": "000000000",
+
+        "banco": "0104",
+
+        "conta": "1008",
+
+        "valor": "1500.10",
+
+        "titular": "Monstro da Automação",
+
+        "resposta": "",
+
+        "minhaconta": "4687204",
+
+        "meunome": "Meu Principe"
+
+    },
+
+    {
+
+        "idtrans": 9,
+
+        "tstrans": "2023-12-05T14:36:31.645762Z",
+
+        "iptrans": "127.0.0.1",
+
+        "chavepix": nao_existe_na_base@gmail.com,
+
+        "banco": "0104",
+
+        "conta": "1008",
+
+        "valor": "1500.10",
+
+        "titular": "Monstro da Automação",
+
+        "resposta": "",
+
+        "minhaconta": "4687204",
+
+        "meunome": "Meu Principe"
+
+    },
+
+    {
+
+        "idtrans": 10,
+
+        "tstrans": "2023-12-05T14:39:14.356350Z",
+
+        "iptrans": "127.0.0.1",
+
+        "chavepix": nao_existe_na_base@gmail.com,
+
+        "banco": "0104",
+
+        "conta": "1008",
+
+        "valor": "1500.10",
+
+        "titular": "Monstro da Automação",
+
+        "resposta": "",
+
+        "minhaconta": "4687204",
+
+        "meunome": "Meu Principe"
+
+    },
+
+    {
+
+        "idtrans": 11,
+
+        "tstrans": "2023-12-05T14:40:10.595649Z",
+
+        "iptrans": "127.0.0.1",
+
+        "chavepix": nao_existe_na_base@gmail.com,
+
+        "banco": "0104",
+
+        "conta": "1008",
+
+        "valor": "1500.10",
+
+        "titular": "Monstro da Automação",
+
+        "resposta": "",
+
+        "minhaconta": "4687204",
+
+        "meunome": "Meu Principe"
+
+    },
+
+    {
+
+        "idtrans": 12,
+
+        "tstrans": "2023-12-05T14:53:22.696024Z",
+
+        "iptrans": "127.0.0.1",
+
+        "chavepix": nao_existe_na_base@gmail.com,
+
+        "banco": "0104",
+
+        "conta": "1008",
+
+        "valor": "1500.10",
+
+        "titular": "Monstro da Automação",
+
+        "resposta": "",
+
+        "minhaconta": "4687204",
+
+        "meunome": "Meu Principe"
+
+    },
+
+    {
+
+        "idtrans": 13,
+
+        "tstrans": "2023-12-05T17:14:44.937771Z",
+
+        "iptrans": "127.0.0.1",
+
+        "chavepix": toto@yahoo.com,
+
+        "banco": "0104",
+
+        "conta": "1008",
+
+        "valor": "1380.10",
+
+        "titular": "Cachorrão Safado",
+
+        "resposta": "",
+
+        "minhaconta": "4687204",
+
+        "meunome": "Meu Principe"
+
+    },
+
+    {
+
+        "idtrans": 14,
+
+        "tstrans": "2023-12-05T17:16:05.707302Z",
+
+        "iptrans": "127.0.0.1",
+
+        "chavepix": toto@yahoo.com,
+
+        "banco": "0104",
+
+        "conta": "1008",
+
+        "valor":

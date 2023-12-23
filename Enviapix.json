@@ -1,0 +1,131 @@
+{
+
+  "valor": "12.34",
+
+  "pagador": {
+
+    "chave": pagador@gerencianet.com.br
+
+  },
+
+  "favorecido": {
+
+    "chave": favorecido@gerencianet.com.br
+
+  }
+
+}
+
+ 
+
+OU
+
+ 
+
+{
+
+  "valor": "12.34",
+
+  "pagador": {
+
+    "chave": pagador@gerencianet.com.br,
+
+    "infoPagador": "Segue o pagamento da conta"
+
+  },
+
+  "favorecido": {
+
+    "contaBanco": {
+
+      "nome": "Nome Favorecido",
+
+      "chavepix": "00000000000",
+
+      "codigoBanco": "09089356",
+
+      "agencia": "1",
+
+      "conta": "123453",
+
+      "tipoConta": "cacc"
+
+    }
+
+  }
+
+}
+
+ 
+
+#Webhook
+
+{
+
+    "endToEndId": "E09089356202011251226APIff82f2e5",
+
+    "valor": "12.34",
+
+    "horario": "2020-11-26T11:06:52.000Z",
+
+    "tipo": "SOLICITACAO",
+
+    "status": "REALIZADO"
+
+}
+
+#Response
+
+{
+
+  "e2eId": "E09089356202011251226APIff82f2e5",
+
+  "valor": "12.34",
+
+  "horario": {
+
+    "solicitacao": "2020-11-25T12:26:42.905Z"
+
+  },
+
+  "status": {
+
+    "type": "EM_PROCESSAMENTO"
+
+  }
+
+}
+
+ 
+
+## Retono do Bacen
+
+    bcbjsontrans = {}
+
+  bcjasontrans['header']= {"bc_endtoendid": "", "bc_ts_request":""}
+
+    bcbjsontrans[''] = ""
+
+    bcbjsontrans[''] = ""
+
+    bcbjsontrans['pagador'] = {}
+
+    bcbjsontrans['pagador']['bc_banco_pagador'] = data['pagador']['banco']
+
+    bcbjsontrans['pagador']['bc_conta_pagador'] = data['pagador']['conta']
+
+    bcbjsontrans['pagador']['bc_info_pagador'] = data['pagador']['infoPagador']
+
+    bcbjsontrans['favorecido'] = {}
+
+    bcbjsontrans['favorecido']['bc_chave_pix'] = favorecido['co_chave_pix']
+
+    bcbjsontrans['favorecido']['bc_nome_titular'] = favorecido['co_nome_titular']
+
+    bcbjsontrans['favorecido']['bc_numero_conta'] = favorecido['co_numero_conta']
+
+    bcbjsontrans['favorecido']['bc_cod_banco'] = favorecido['co_cod_banco']  
+
+    bcbjsontrans['favorecido']['bc_valor'] = data['valor']
+
+    bcbjsontrans['favorecido']['bc_status_request'] = "EM_PROCESSAMENTO"
