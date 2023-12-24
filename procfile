@@ -1,0 +1,1 @@
+web: guircorn core.wsgi --log-file -
