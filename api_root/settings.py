@@ -81,10 +81,10 @@ WSGI_APPLICATION = 'api_root.wsgi.application'
 DATABASES = {
     "default":{
     	"ENGINE": "django.db.backends.postgresql_psycoppg2",
-    	"NAME": "bcb_pix_db",
+    	"NAME": "bcb_pix_db_p7xp",
     	"USER": "admin",
-    	"PASSWORD": "vAfwKr1c7I2ist73CWrwq3j6MboACYf9",
-    	"HOST": "dpg-cm4teged3nmc73aljkpg-a.oregon-postgres.render.com",
+    	"PASSWORD": "vz2NZWIovnAOxnyYtBngRSEzM7yAaDoi",
+    	"HOST": "dpg-cm4tpk7qd2ns73em3m0g-a.oregon-postgres.render.com",
     	"PORT": "5432",
     }
 }
