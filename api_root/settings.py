@@ -79,9 +79,13 @@ WSGI_APPLICATION = 'api_root.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default":{
+    	"ENGINE": "django.db.backends.postgresql_psycoppg2",
+    	"NAME": "bcb_pix_db",
+    	"USER": "admin",
+    	"PASSWORD": "vAfwKr1c7I2ist73CWrwq3j6MboACYf9",
+    	"HOST": "dpg-cm4teged3nmc73aljkpg-a.oregon-postgres.render.com",
+    	"PORT": "5432",
     }
 }
 
